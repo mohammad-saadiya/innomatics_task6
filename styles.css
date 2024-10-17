@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  .todos-bg-container {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 700px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  .todos-heading, .create-task-heading, .todo-items-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4c63b6;
+  }
+  
+  .create-task-heading-subpart, .todo-items-heading-subpart {
+    color: #ff6f61;
+  }
+  
+  .todo-user-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #e4e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .todo-user-input:focus {
+    border-color: #4c63b6;
+  }
+  
+  .button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4c63b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+  }
+  
+  .button:hover {
+    background-color: #3f55a1;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .filter-btn {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-btn:hover {
+    background-color: #e75a4f;
+  }
+  
+  .todo-items-container {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6f6ff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .todo-item-container:hover {
+    background-color: #d8efff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checked {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .far.fa-trash-alt {
+    color: #ff6f61;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .far.fa-trash-alt:hover {
+    color: #e75a4f;
+  }
+  
